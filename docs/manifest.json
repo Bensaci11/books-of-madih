@@ -1,7 +1,7 @@
 {
   "name": "Books of Madih",
   "short_name": "Madih",
-  "start_url": "./",
+  "start_url": "/books-of-madih/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
