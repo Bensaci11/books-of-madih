@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">كتب المدح</string>
+    <string name="title_activity_main">كتب المدح</string>
+    <string name="package_name">com.bensaci11.kutubalmadh</string>
+    <string name="custom_url_scheme">com.bensaci11.kutubalmadh</string>
+</resources>
