@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/books-of-madih/', // اسم المستودع على GitHub Pages
+  // GitHub Pages يحتاج base يساوي اسم المستودع
+  base: process.env.NODE_ENV === 'production'
+    ? `/${process.env.VITE_REPO_NAME}/`
+    : '/',
   plugins: [
     react(),
     VitePWA({
@@ -11,7 +14,9 @@ export default defineConfig({
       manifest: {
         name: 'كتب المدح',
         short_name: 'المدح',
-        start_url: '/books-of-madih/', // مهم جداً لمسار GitHub Pages
+        start_url: process.env.NODE_ENV === 'production'
+          ? `/${process.env.VITE_REPO_NAME}/`
+          : '/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#000000',
