@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/books-of-madih/',
+  plugins: [vue()],
+  base: '/books-of-madih/'
 })
